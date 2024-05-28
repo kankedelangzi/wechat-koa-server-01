@@ -49,7 +49,16 @@ router.get("/api/wx_openid", async (ctx) => {
     ctx.body = ctx.request.headers["x-wx-openid"];
   }
 });
+// 获取计数
+router.get("/api/list", async (ctx) => {
 
+  ctx.body = {
+    code: 0,
+    list: [{
+      name: 111
+    }]
+  };
+});
 const app = new Koa();
 app
   .use(logger())

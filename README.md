@@ -120,3 +120,7 @@ curl -X POST -H 'content-type: application/json' -d '{"action": "inc"}' https://
 ## License
 
 [MIT](./LICENSE)
+
+
+push 
+git commit -m 'update' && git push -u origin master
